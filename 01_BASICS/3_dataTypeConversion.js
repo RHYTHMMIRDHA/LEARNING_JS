@@ -50,3 +50,10 @@ let five = null;
 let fiveString = String(five);
 console.log(fiveString); // null
 console.log(typeof fiveString); // string
+
+
+//         OPERATIONS ON DATATYPES
+console.log(true) // true
+console.log(+true) // 1
+console.log(+false) // 0
+console.log(+"") // 0
