@@ -57,3 +57,22 @@ console.log(true) // true
 console.log(+true) // 1
 console.log(+false) // 0
 console.log(+"") // 0
+
+//          RELATIONAL OPERATORS -> comparisons >, <, >=, <=  and equality works differnetally ---- (a)
+
+console.log("02" > 1) // automatically convert string to number
+
+// (a)
+console.log(null > 0); // converted null -> 0    false
+console.log(null == 0); // false
+console.log(null >= 0); // converted null -> 0   true
+
+console.log(undefined == 0); // all false
+console.log(undefined >= 0);
+console.log(undefined > 0);
+
+// == (do not checks dataTypes -> if only even values are same -> true , only checks values) and ===(strict check -> check {type + values }-> both must be same for true)
+
+// prefered to use ===
+// same for not equal -> != or !==
+
