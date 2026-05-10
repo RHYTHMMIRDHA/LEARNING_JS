@@ -18,3 +18,28 @@ function isPrime(n){ // parameter
 console.log(isPrime(7)); // argument
 
 // when we don't pass an argument it become undefined
+
+
+
+////////////////////// WHEN WE DON'T KNOW THE NUMBER OF PARAMETER //////
+
+ // rest operator
+ function addNums(val1, val2, ...nums){ // we have recieved the args as n array
+    let s = 0;
+    for(let i=0; i<nums.length; i++) s+=nums[i];
+
+    return s;
+ }
+
+ console.log(addNums(1, 2, 3, 99));
+
+ const user = {
+    name : "Rhythm Mirdha",
+    age : 21
+ }
+
+ function handleObj(anyObj){
+    console.log(`Hello ${anyObj.name}`);
+ }
+
+ handleObj(user);
